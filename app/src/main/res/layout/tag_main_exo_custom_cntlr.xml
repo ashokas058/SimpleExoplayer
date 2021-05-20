@@ -11,20 +11,24 @@
         android:layout_centerInParent="true"
         android:layout_height="wrap_content">
         <ImageView
+            android:src="@drawable/ic_exo_replay_10_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/exo_rew"
             android:layout_marginEnd="16dp"></ImageView>
         <ImageView
+            android:src="@drawable/ic_exo_play_circle_outline_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/exo_play"
             ></ImageView>
         <ImageView
+            android:src="@drawable/ic_exo_pause_circle_outline_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/exo_pause"></ImageView>
         <ImageView
+            android:src="@drawable/ic_exo_forward_10_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"

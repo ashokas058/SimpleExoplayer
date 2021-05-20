@@ -58,9 +58,11 @@ public class MainActivity extends AppCompatActivity {
         exoPlayer= new SimpleExoPlayer.Builder(context).build();
         exoPLayerView.setPlayer(exoPlayer); //Add Player to ExoView
         exoPLayerView.setKeepScreenOn(true);
+        exoPLayerView.showController();
         exoPlayer.setMediaItem(MediaItem.fromUri(videoUrl));
         exoPlayer.prepare();
         exoPlayer.setPlayWhenReady(true);
+
     }
 
     @Override
