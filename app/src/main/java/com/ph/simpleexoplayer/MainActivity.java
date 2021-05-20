@@ -84,10 +84,14 @@ public class MainActivity extends AppCompatActivity {
         imgExoFullScrn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(blnFlag)
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-                else
+                if(blnFlag) {
+                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+                    blnFlag=false;
+                }
+                else {
                     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+                    blnFlag=true;
+                }
             }
         });
     }
